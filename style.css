@@ -1,0 +1,39 @@
+html {
+    background-image: linear-gradient(to bottom, #1e0120, #470c49, #50175e, #532063, #793494, #884f99);
+    background-size: cover; /* ou 100% 100% para garantir que o gradiente cubra toda a viewport */
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: center;
+    font-family: sans-serif;
+    margin: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center; /* Centraliza as divs horizontalmente */
+}
+
+.lado {
+    width: 45%; /* Define a largura das divs */
+    margin: 40px 5px; /* Adiciona espaçamento horizontal entre as divs */
+    margin-left: 100px;
+}
+
+/* Ajuste para telas menores */
+@media screen and (max-width: 768px) {
+    .lado {
+        width: 90%; /* Reduz a largura das divs para ocupar 90% da largura da tela */
+        margin: 0 auto; /* Centraliza as divs na tela */
+    }
+}
